@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event)=>{
+const validation = function() {   document.addEventListener("DOMContentLoaded", (event)=>{
 
     const form = document.getElementById("registration-form");
     
@@ -41,3 +41,5 @@ document.addEventListener("DOMContentLoaded", (event)=>{
 
 
 });
+}
+validation();
