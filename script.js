@@ -15,15 +15,15 @@ const validation = function() {   document.addEventListener("DOMContentLoaded", 
 
         if(username.length < 3){
             isValid = false;
-            messages[0] = "Username is too short!";
+            messages.push("Username is too short!");
         }
         if(!regex.test(email)){
             isValid = false;
-            messages[1] = "Your email address is not valid!";
+            messages.push("Your email address is not valid!");
         }
         if(password.length < 8){
             isValid = false;
-            messages[2] = "PassWord is too short!";
+            messages.push("PassWord is too short!");
         }
         if(isValid === true){
             feedbackDiv.style.display = "block";
